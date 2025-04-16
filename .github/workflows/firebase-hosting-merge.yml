@@ -25,8 +25,7 @@ jobs:
       - name: Setup Node.js (NPM)
         uses: actions/setup-node@master
         with:
-          node-version: 18
-          cache: 'npm'
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
