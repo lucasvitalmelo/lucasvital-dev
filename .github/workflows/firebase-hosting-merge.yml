@@ -22,8 +22,8 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Setup Node.js (NPM)
-        uses: actions/setup-node@master
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
           node-version: 20
 
@@ -35,8 +35,6 @@ jobs:
 
       - name: Deploy to Firebase  
         uses: FirebaseExtended/action-hosting-deploy@v0
-        env:
-          FIREBASE_CLI_EXPERIMENTS: webframeworks
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_LUCASVITAL_PORTFOLIO }}
