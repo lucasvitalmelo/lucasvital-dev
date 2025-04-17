@@ -15,14 +15,6 @@ export const currentSkills = {
     image: '/icons/typescript-icon.svg',
     link: 'https://www.typescriptlang.org/'
   },
-  fastify: {
-    image: '/icons/fastify-icon.svg',
-    link: 'https://fastify.dev/'
-  },
-  express: {
-    image: '/icons/express-icon.svg',
-    link: 'https://expressjs.com/'
-  },
   vite: {
     image: '/icons/vite-icon.svg',
     link: 'https://vite.dev/'
@@ -30,6 +22,14 @@ export const currentSkills = {
   nextjs: {
     image: '/icons/next-icon.svg',
     link: 'https://nextjs.org/'
+  },
+  fastify: {
+    image: '/icons/fastify-icon.svg',
+    link: 'https://fastify.dev/'
+  },
+  express: {
+    image: '/icons/express-icon.svg',
+    link: 'https://expressjs.com/'
   },
   python: {
     image: '/icons/python-icon.svg',
@@ -55,6 +55,10 @@ export const currentSkills = {
     image: '/icons/jest-icon.svg',
     link: 'https://jestjs.io/pt-BR/'
   },
+  'testing-Library': {
+    image: '/icons/testing-library-icon.svg',
+    link: 'https://testing-library.com/'
+  },
   storybook: {
     image: '/icons/storybook-icon.svg',
     link: 'https://storybook.js.org/'
@@ -74,6 +78,10 @@ export const currentSkills = {
   drizzle: {
     image: '/icons/drizzle-icon.svg',
     link: 'https://orm.drizzle.team/'
+  },
+  neon: {
+    image: '/icons/neon-icon.svg',
+    link: 'https://neon.tech/'
   },
   tailwind: {
     image: '/icons/tailwind-icon.svg',

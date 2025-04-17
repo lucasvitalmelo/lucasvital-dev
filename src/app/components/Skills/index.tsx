@@ -20,7 +20,7 @@ export function Skills() {
         {`<  Skills />`}
       </h2>
 
-      <div className="max-w-6xl flex flex-wrap px-8 gap-16">
+      <div className="max-w-6xl mx-auto grid grid-cols-[repeat(auto-fit,minmax(170px,1fr))] gap-5 w-full">
         {
           skillKeys.map(skillKey => {
             return (
@@ -28,7 +28,7 @@ export function Skills() {
                 key={skillKey}
                 href={currentSkills[skillKey].link}
                 target="_blank"
-                className="group size-16 rounded-sm gap-2 flex flex-col justify-center items-center shrink-0 transition-all"
+                className="group flex flex-col justify-center items-center rounded-sm mx-auto gap-2.5 mb-2 shrink-0"
               >
                 <Image
                   alt={skillKey}
@@ -36,7 +36,7 @@ export function Skills() {
                   width={50}
                   height={50}
                 />
-                <p className="text-white text-sm hidden group-hover:block">
+                <p className="text-white text-sm transition-all opacity-0 group-hover:opacity-100">
                   {capitalizeFirstLetter(skillKey)}
                 </p>
               </Link>
