@@ -12,9 +12,9 @@ export default function ParticleBackground() {
     await loadStarsPreset(tsParticles);
 
     setOptions({
-
       preset: 'stars',
       fullScreen: { enable: true, zIndex: -1 },
+      background: { color: '#020617' },
       particles: {
         number: { value: 300 },
         color: { value: '#4b5563' },
