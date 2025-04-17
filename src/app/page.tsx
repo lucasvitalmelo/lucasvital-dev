@@ -1,11 +1,14 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+
+import { Button } from "@/components/ui/button";
+import { About } from "./components/about";
+import { Skills } from "./components/about/Skills";
 
 export default function Home() {
   return (
     <>
-      <div className="flex w-full max-w-6xl text-left items-center justify-between h-[calc(100vh-65px)]">
+      <div id='#home' className="flex w-full max-w-6xl px-8 text-left items-center justify-between h-[calc(100vh-65px)]">
         <div>
           <div className="flex w-full justify-center mb-8 md:hidden lg:hidden">
             <div className="rounded-full border-4 border-blue-400 inline-block">
@@ -34,28 +37,8 @@ export default function Home() {
         </div>
       </div>
 
-
-      <div id='about' className="w-full gap-8 text-left flex flex-col items-center justify-center py-20 bg-gray-900/70 mb-40 backdrop:blur-md">
-        <h2 className="text-white font-mono text-3xl">{`< Sobre Mim />`}</h2>
-        <div className="text-slate-500 text-left max-w-6xl">
-          <p>
-            Sou um desenvolvedor web com experiência em criar aplicações modernas, performáticas e responsivas. Tenho uma forte paixão por transformar ideias em interfaces intuitivas, acessíveis e visualmente agradáveis, sempre focando na melhor experiência para o usuário.
-          </p>
-          <br />
-          <p>
-            Ao longo da minha trajetória, desenvolvi projetos utilizando tecnologias como React, Next.js, Node.js, TypeScript, entre outras ferramentas modernas do ecossistema JavaScript. Trabalho com atenção aos detalhes, aplicando boas práticas de arquitetura, componentes reutilizáveis e responsividade para garantir que as aplicações funcionem bem em qualquer dispositivo.
-          </p>
-          <br />
-          <p>
-            Tenho familiaridade com conceitos de UX/UI design, e otimização para SEO e performance. Também estou habituado a trabalhar com integração de APIs REST, autenticação, gerenciamento de estado com ferramentas como Context API, Zustand, React-Query e deploy em plataformas como Firebase e Vercel integradas ao Github Actios.
-          </p>
-          <br />
-          <p>
-            Sou movido por curiosidade e aprendizado constante. Gosto de explorar novas ferramentas, acompanhar as tendências do mercado e aplicar soluções modernas e eficientes nos projetos em que atuo. Estou sempre em busca de desafios que me permitam crescer como profissional e contribuir com times e produtos de forma significativa.
-          </p>
-        </div>
-      </div >
+      <About />
+      <Skills />
     </>
-
   );
 }

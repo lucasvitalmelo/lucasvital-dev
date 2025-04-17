@@ -12,7 +12,7 @@ const jetBrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Lucas Vital.dev",
+  title: "Lucas Vital",
 };
 
 export default function RootLayout({
