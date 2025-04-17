@@ -3,7 +3,9 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { About } from "./components/about";
-import { Skills } from "./components/about/Skills";
+import { Skills } from "./components/skills";
+import { Projects } from "./components/projects";
+
 
 export default function Home() {
   return (
@@ -16,15 +18,16 @@ export default function Home() {
             </div>
           </div>
 
-          <h1 className="text-blue-100 font-normal text-3xl mb-4 lg:text-4xl" >
-            Olá, eu sou{' '}
-            <span className="text-blue-400 font-extrabold ">
+          <h1 className="text-blue-100 font-normal text-3xl mb-4 lg:text-2xl" >
+            Hey there!, I'm- <br />
+            <span className="text-blue-400 text-5xl font-extrabold ">
               Lucas Vital
             </span>
           </h1>
 
-          <span className="text-slate-400 text-1xl lg:text ">
-            Desenvolvedor Web apaixonado por criar experiências digitais incríveis.
+          <span className="text-slate-400 text-1xl lg:text max-w-[750px] block">
+            Front-end developer. Develop modern web applications with tools like React.js with Typescript and NodeJs.
+            {/* Web developer who loves creating amazing digital experiences. */}
           </span>
           <br />
           <Link className="" href={'/files/lucas-vital-cv.pdf'}>
@@ -39,6 +42,8 @@ export default function Home() {
 
       <About />
       <Skills />
+      <Projects />
+
     </>
   );
 }
