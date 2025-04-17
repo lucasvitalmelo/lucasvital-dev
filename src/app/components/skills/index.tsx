@@ -14,7 +14,7 @@ export function Skills() {
   return (
     <div
       id='skills'
-      className="w-full gap-20 text-left flex flex-col items-center justify-center py-20 mb-40"
+      className="w-full gap-20 text-left flex flex-col items-center justify-center py-20 "
     >
       <h2 className="text-white font-mono text-3xl">
         {`<  Skills />`}
