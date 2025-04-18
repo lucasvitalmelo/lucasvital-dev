@@ -1,24 +1,27 @@
 export const projects = [
   {
     name: "Letmeask",
-    url: "https://letmeask-nlw-528ce.firebaseapp.com/",
+    link: "https://letmeask-nlw-528ce.firebaseapp.com/",
+    code: 'https://github.com/lucasvitalmelo/next-level-week-projects/tree/main/letmeask',
     image: "/projects/letmeask-image.png",
     description: "Create your Q&A rooms quickly!",
-    libs: ["ReactJs", "Sass", "Firebase"]
+    stacks: `ReactJs, Sass, Firebase`
   },
   {
     name: "Todo List",
-    url: "ignite-todo-2023.vercel.app",
+    link: "https://ignite-todo-2023.vercel.app/",
+    code: 'https://github.com/lucasvitalmelo/next-level-week-projects/tree/main/to-do-react',
     image: "/projects/todo-project.png",
     description: "Classic todo list!",
-    libs: ["ReactJs", "Styled Components", "React Hook Form"]
+    stacks: `ReactJs, Styled Components, React Hook Form`
   },
   {
     name: "Coffee Delivery",
-    url: "coffee-delivery-two-gamma.vercel.app",
+    link: "https://coffee-delivery-two-gamma.vercel.app/",
+    code: 'https://github.com/lucasvitalmelo/02-dasafio-coffee-delivery-reactts-2023',
     image: "/projects/coffee-delivery-project.png",
     description: "E-commerce for coffee delivery!",
-    libs: ["ReactJs", "Styled Components", "Zod", "React Hook Form"]
+    stacks: `ReactJs, Styled Components, Zod, React Hook Form`
   },
 
 

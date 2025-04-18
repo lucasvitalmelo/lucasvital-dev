@@ -14,7 +14,7 @@ export default function Home() {
         <div>
           <div className="flex w-full justify-center mb-8 md:hidden lg:hidden">
             <div className="rounded-full border-4 border-blue-400 inline-block">
-              <Image alt="my photografic" src='/my-photo.jpeg' width={200} height={200} className="rounded-full bg-white/30 backdrop-contrast-50" />
+              <Image alt="my photografic" src='/files/my-photo.png' width={200} height={200} className="rounded-full bg-white/30 backdrop-contrast-50" />
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export default function Home() {
 
         </div>
         <div className="hidden md:block lg:block rounded-full border-4 border-blue-400 shrink-0">
-          <Image alt="my photografic" src='/my-photo.jpeg' width={200} height={200} className="rounded-full bg-white/30 backdrop-contrast-50" />
+          <Image alt="my photografic" src='/files/my-photo.png' width={200} height={200} className="rounded-full bg-white/30 backdrop-contrast-50" />
         </div>
       </div>
 
