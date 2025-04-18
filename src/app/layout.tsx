@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={jetBrainsMono.className}>
+    <html data-theme="dark" lang="en" className={`${jetBrainsMono.className} dark`}>
       <body className="bg-[#020617]">
         <ParticleBackground />
         <main className="flex flex-col justify-center items-center">
