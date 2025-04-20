@@ -1,4 +1,4 @@
-import { Code2, ExternalLink } from "lucide-react";
+import { Code2, ExternalLink, LinkIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,46 +16,37 @@ export function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div
-      className="bg-slate-800 hover:border-slate-300 transition-colors"
+      className=" bg-slate-800 w-fit flex-col mx-auto"
     >
-      <Image alt={name} src={image} width={320} height={200} />
-      <div className="p-2 mb-2">
-        <h1 className="text-slate-50 font-bold ">
-          {name}
-        </h1>
+      <Image
+        alt={name}
+        src={image}
+        width={700}
+        height={0}
+        className="w-[480px] md:w-[600px] lg:w-[700px] h-auto"
+      />
 
-        <p className="text-slate-300 text-[12px] font-extralight mt-1">
-          {description}
-        </p>
+      <div className="px-4 py-2 w-full flex justify-between">
 
+        <span >{name}</span>
 
-        <p className="text-slate-300 text-[12px] font-extralight mt-4 max-w-[300px]">
-          <strong className="font-bold">Stacks:</strong> {stacks}
-        </p>
-
-        <div className="flex space-x-4 mt-2 pt-2 border-t">
-
-          <Link
-            className="flex items-center gap-2 text-[11px] hover:underline"
-            href={link}
-          >
+        <div className="flex gap-2">
+          <Link rel="stylesheet" href={link} className="text-xs flex gap-2 items-center hover:underline hover:text-blue-500">
+            preview
             <ExternalLink size={14} />
-            Preview
           </Link>
-
-          <Link
-            className="flex items-center gap-2 text-[11px] hover:underline"
-            href={code}
-          >
-            <Code2 size={14} />
+          <span>|</span>
+          <Link rel="stylesheet" href={code} className="text-xs flex gap-2 items-center hover:underline hover:text-blue-500">
             Code
+            <Code2 size={14} />
           </Link>
         </div>
-
       </div>
 
 
+    </div >
 
-    </div>
+
+
   )
 }

@@ -10,12 +10,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  @apply bg-[#6b6b6b] dark:bg-[#272727] rounded-full
+  @apply bg-[#494949] dark:bg-[#494949] rounded-full
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply bg-[#494949] dark:bg-[#636363] rounded-full
+  @apply bg-[#6b6b6b] dark:bg-[#6b6b6b] rounded-full
 }
 
 @theme inline {

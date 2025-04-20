@@ -14,7 +14,7 @@ export function Skills() {
   return (
     <div
       id='skills'
-      className="w-full gap-20 text-left flex flex-col items-center justify-center py-20 "
+      className="w-full gap-20 text-left flex flex-col items-center justify-center py-20"
     >
       <h2 className="text-white font-mono text-3xl">
         {`<  Skills />`}
@@ -33,8 +33,10 @@ export function Skills() {
                 <Image
                   alt={skillKey}
                   src={currentSkills[skillKey].image}
+                  priority
                   width={50}
                   height={50}
+                  className="aspect-square"
                 />
                 <p className="text-white text-sm transition-all opacity-0 group-hover:opacity-100">
                   {capitalizeFirstLetter(skillKey)}
