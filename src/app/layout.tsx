@@ -5,6 +5,7 @@ import "./globals.css";
 
 import { Navbar } from "./components/navbar";
 import ParticleBackground from "./components/particles";
+import { Toaster } from "@/components/ui/sonner";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </main>
+        <Toaster />
       </body>
     </html >
   );

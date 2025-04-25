@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { About } from "./components/about";
 import { Skills } from "./components/skills";
 import { Projects } from "./components/projects";
+import ContactForm from "./components/contact-form";
+import { Footer } from "./components/footer";
 
 
 export default function Home() {
@@ -57,6 +59,9 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <ContactForm />
+      <Footer />
+
 
     </>
   );
