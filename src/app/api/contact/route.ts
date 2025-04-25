@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
     const { name, email, message } = await req.json();
 
     if (!name || !email || !message) {
-      return new Response(JSON.stringify({ error: 'Campos obrigatórios' }), { status: 400 });
+      return new Response(JSON.stringify({ error: 'Required fields!' }), { status: 400 });
     }
 
     const transporter = nodemailer.createTransport({
@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
     const mailOptions = {
       from: email,
       to: process.env.EMAIL_USER,
-      subject: `Contato do portfolio - ${name}`,
+      subject: `Contact - ${name}`,
       text: message,
     };
 
@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
 
     return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (error) {
-    console.error('Erro ao enviar e-mail:', error);
-    return new Response(JSON.stringify({ error: 'Erro interno' }), { status: 500 });
+    console.error('Error sending email:', error);
+    return new Response(JSON.stringify({ error: 'Internal error!' }), { status: 500 });
   }
 }
