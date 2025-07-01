@@ -39,7 +39,7 @@ export default function Home() {
             {/* Web developer who loves creating amazing digital experiences. */}
           </span>
           <br />
-          <Link className="" href={'/files/lucas-vital-cv.pdf'}>
+          <Link className="" href={'/files/LucasVitaldeMelo-DesenvolvedorFront-end.pdf'}>
             <Button size="lg" className="cursor-pointer mt-4" variant='default'>Download CV</Button>
           </Link>
 
